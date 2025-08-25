@@ -4,25 +4,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hardware</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     
     <div class="header">
-        <img src="imagens/if.png" class="imagens" alt="IFClogo">
-        <h1 class="title">Hardware</h1>
+        <img onclick="window.location.href='https://ibirama.ifc.edu.br'" src="imagens/if.png" class="imagens" alt="IFClogo">
+        <h1 id="titulo" class="titulo">Hardware</h1>
     </div>
     <h2>Processador</h2>
 
-    
-    <img src="imagens/processador.png" class="imagens processador" alt="processador">
-
-   
-    <div class="botão">
-        <button>Saiba mais</button>
+    <div class="imagem-e-botao">
+        <button class="trocar-imagem-btn" onclick="TrocarImagem()">
+            <img src="imagens/seta.png" alt="seta">
+        </button>
+        <img id="peça" src="imagens/processador.png" class="imagens processador" alt="processador">
+        <button class="trocar-imagem-btn" onclick="VoltarImagem()">
+            <img src="imagens/seta.png" style="transform: scaleX(-1);" alt="voltar">
+        </button>
     </div>
 
-   
+    <div class="botão">
+        <a id="saibaMais">
+            <button>Saiba mais</button>
+        </a>
     </div>
 </body>
-
 </html>
